@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "SUSE", sans-serif;
+    margin: 0;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+p {
+    text-align: justify;
+}
+
+figure {
+    margin: 0;
+}
+
+a:link, a:visited {
+    color: #d53a9c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #733ad5;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+main {
+    margin: 0 5vw;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "teaser-and-links"
+        "abstract"
+        "demo";
+}
+
+header {
+    text-align: center;
+}
+
+.paper-authors {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.paper-affiliations {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 0.75em;
+}
+
+
+.teaser-and-links img,
+.demo img,
+.demo a {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.separator {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px 0 0 0;
+    border-image-source: linear-gradient(to left, transparent, #733ad566, #d53a9c5b, transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.teaser-and-links,
+.abstract,
+.demo {
+    padding-bottom: 2rem;
+}
+
+.abstract,
+.demo {
+    padding-top: 2rem;
+}
+
+
+header {
+    grid-area: header;
+}
+
+section.teaser-and-links {
+    grid-area: teaser-and-links;
+
+    + .separator {
+        grid-area: abstract;
+    }
+}
+
+section.abstract {
+    grid-area: abstract;
+    
+    + .separator {
+        grid-area: demo;
+    }
+}
+
+section.demo {
+    grid-area: demo;
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-areas: 
+            "teaser-and-links teaser-and-links"
+            "header abstract"
+            "demo demo";
+        grid-auto-columns: 1fr;
+        gap: 1rem;
+    }   
+
+    .demo h2 {
+        text-align: center;
+    }
+
+    section.teaser-and-links {
+        + .separator {
+            display: none;
+        }
+    }
+    section.abstract {
+        padding-top: 0;
+    }
+}
+

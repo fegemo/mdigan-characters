@@ -1,0 +1,49 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: MDIGAN-Characters
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file and the article in the preferred-citation field.
+type: software
+authors:
+  - given-names: Flávio
+    family-names: Coutinho
+    email: fegemo@cefetmg.br
+    affiliation: CEFET-MG
+    orcid: 'https://orcid.org/0000-0001-8014-3906'
+  - given-names: Luiz
+    family-names: Chaimowicz
+    email: chaimo@dcc.ufmg.br
+    affiliation: UFMG
+    orcid: 'https://orcid.org/0000-0001-8156-9941'
+identifiers:
+  - type: other
+    value: "\tarXiv:2409.10721"
+    description: ArXiv
+repository-code: 'https://github.com/fegemo/mdigan-characters'
+url: 'https://fegemo.github.io/mdigan-characters'
+abstract: >-
+  A GAN that can generate pixel art characters in a target
+  pose given images of it in source ones.
+keywords:
+  - gan
+  - generative model
+  - pixel art character
+  - procedural content generation
+license: MIT
+preferred-citation:
+  authors:
+    - family-names: Coutinho
+      given-names: Flávio
+    - family-names: Chaimowicz
+      given-names: Luiz
+  title: 'A Missing Data Imputation GAN for Character Sprite Generation'
+  type: article
+  journal: 'Proceedings of the XXIII Brazilian Symposium on Computer Games and Digital Entertainment (SBGames)'
+  year: 2024
+  city: 'Manaus'
+  country: 'Brazil'
+  publisher: 'SBC'
+  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDIGAN Characters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&family=SUSE&display=swap">
+    <link rel="stylesheet" href="demo/main.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="paper-title">A Missing Data Imputation GAN for Character Sprite Generation</h1>
+            <div class="paper-authors">
+                <span class="paper-author">Flávio Coutinho¹²</span>
+                <span class="paper-author">Luiz Chaimowicz¹</span>
+            </div>
+            <div class="paper-affiliations">
+                <span class="paper-affiliation">¹
+                    Departamento de Ciência da Computação<br>
+                    Universidade Federal de Minas Gerais, Brazil</span>
+                <span class="paper-affiliation">
+                    ²Departamento de Computação<br>
+                    Centro Federal de Educação Tecnológica de Minas Gerais, Brazil
+                </span>
+            </div>
+            <div class="paper-citation">
+                Published in SBGames 2024
+            </div>
+        </header>
+        <section class="teaser-and-links">
+            <figure>
+                <img src="demo/teaser.svg" alt="Sample character with a missing pose generated using our proposed model]{There are four examples, each displaying three poses of a character (e.g., facing right, front, left) being used to generate a missing sprite (e.g., facing back). Each example uses the other three directions to produce a different missing pose.">
+                <figcaption>Our model imputes a character's missing pose collaboratively using all the available information from other domains.</figcaption>
+            </figure>
+            <div class="links">
+                <a href="https://arxiv.org/abs/2109.03807" class="paper-link">Read the Paper</a>
+                <a href="https://github.com/fegemo/mdigan-characters" class="code-link">Code on GitHub</a>
+                <a href="https://fegemo.github.io/interactive-generator">Interactive Demo</a>
+                <a href="demo/bibtex.txt" target="_blank">Cite this Work</a>
+            </div>
+        </section>
+        <div class="separator"></div>
+        <section class="abstract">
+            <h2>Abstract</h2>
+            <p>Creating and updating pixel art character sprites with many frames spanning different animations and poses takes time and can quickly become repetitive. However, that can be partially automated to allow artists to focus on more creative tasks. In this work, we concentrate on creating pixel art character sprites in a target pose from images of them facing other three directions. We present a novel approach to character generation by framing the problem as a missing data imputation task. Our proposed generative adversarial networks model receives the images of a character in all available domains and produces the image of the missing pose. We evaluated our approach in the scenarios with one, two, and three missing images, achieving similar or better results to the state-of-the-art when more images are available. We also evaluate the impact of the proposed changes to the base architecture.</p>
+        </section>
+        <div class="separator"></div>
+        <section class="demo">
+            <h2>Interactive Demo</h2>
+            <a href="https://fegemo.github.io/interactive-generator">
+                <img id="demo-iframe" src="demo/demo-preview.webp">
+            </a>
+        </section>
+    </main>
+</body>
+</html>
