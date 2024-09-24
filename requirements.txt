@@ -1,0 +1,13 @@
+tensorflow_addons==0.18.0
+tensorflow==2.10.1
+matplotlib==3.7.1
+tqdm==4.65.0
+
+numpy==1.24.2
+graphlib-backport
+
+beaupy
+typing_extensions>=4.7.0
+
+# for tensorflow_addons not to include a new (breaking) version of typeguard:
+typeguard==2.7
