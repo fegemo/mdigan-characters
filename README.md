@@ -166,5 +166,5 @@ python train.py --my-dataset --domains "smiling" "sad" "angry" --image-size 128 
 
 
 
-[url-paper]: https://www.sbgames.org/sbgames2024/????
+[url-paper]: https://arxiv.org/abs/2409.10721
 [url-demo]: https://fegemo.github.io/mdigan-characters
