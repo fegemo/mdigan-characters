@@ -87,6 +87,7 @@ figcaption {
 .links {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
     margin: 1rem 0;
@@ -169,6 +170,12 @@ section.presentation {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@media screen and (min-width: 470px) {
+    .links {
+        flex-wrap: nowrap;
+    }
 }
 
 @media screen and (min-width: 768px) {
