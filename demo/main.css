@@ -182,7 +182,8 @@ section.presentation {
         gap: 1rem;
     }   
 
-    .demo h2 {
+    .demo h2,
+    .presentation h2 {
         text-align: center;
     }
 
